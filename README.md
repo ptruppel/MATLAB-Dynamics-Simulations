@@ -1,3 +1,3 @@
-# VirginiaTech
+# MATLAB Dynamics Simulations
 
-Virginia Tech is a compilation of codes created on various subjects.
+This repository is to be a reference for dynamical simulations when using the MATLAB coding language.
