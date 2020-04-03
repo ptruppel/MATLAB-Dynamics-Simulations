@@ -1,1 +1,3 @@
-# Double Pendulum code and analysis under construction
+# Double Pendulum
+
+Code and analysis under construction.
