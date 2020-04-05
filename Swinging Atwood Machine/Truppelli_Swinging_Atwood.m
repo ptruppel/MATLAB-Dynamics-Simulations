@@ -1,5 +1,6 @@
-%EULERS_METHOD_PROJECTILE_MOTION_DEMO This script simulates the exact
-%and numericaly simulated motion of a simple pendulum. It uses matlabs internal 
+%Last Update 4/5/2020 by Phillip Truppelli
+%EULERS_METHOD_SWINGING_ATWOOD_DEMO This script simulates the exact
+%and numericaly simulated motion of a swinging atwood machine. It uses matlab's internal 
 %ODE23 solver as well as a local function using Euler's Method to simulate 
 %the motion. 
 clear;
@@ -152,8 +153,8 @@ marker_size = 6;        % size of projectile
 Y_M = State(:,3)-3;
 X_M = -1*ones(size(Y_M));
 
-Y_m = y_traj;%-State(:,3).*cos(State(:,1));
-X_m = x_traj+1;%State(:,3).*sin(State(:,1));
+Y_m = y_traj;
+X_m = x_traj+1;
 
 fig = figure(3);    % create 
 clf  
@@ -177,7 +178,7 @@ grid on
 
 %Axis limits - set these BEFORE animating to make sure the axis is fixed
 %while animating the motion. If this isn't done, then the axis will be
-%constantly updating while you animatae the motion and it looks terrible 
+%constantly updating while you animate the motion and it looks terrible 
 ax.XLim = [-3, 3];
 ax.YLim = [-3, 3];
 daspect([1 ,1 ,1]);
